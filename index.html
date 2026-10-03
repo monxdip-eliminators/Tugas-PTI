@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Portfolio PTI - Azis Al-Ayyubi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #d1d5db;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1f2937;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1f2937;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #374151;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile strong {
+            color: #2563eb;
+        }
+
+        .cycle {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 180px;
+            background: #eef2ff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .step strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #1d4ed8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #1f2937;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        .conclusion {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>E-Portfolio Pengantar Teknologi Informasi</h1>
+        <p>Tugas Analisis Teknologi Informasi</p>
+    </header>
+<!-- NAVIGASI -->
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#tugas1">Tugas 1</a>
+        <a href="#tugas2">Tugas 2</a>
+        <a href="#tugas3">Tugas 3</a>
+        <a href="#tugas4">Tugas 4</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- PROFIL -->
+        <section id="profil" class="card profile">
+            <h2>Profil Mahasiswa</h2>
+
+            <p><strong>Nama:</strong> Azis Al-Ayyubi</p>
+            <p><strong>Program Studi:</strong> Sistem Informasi</p>
+            <p><strong>Mata Kuliah:</strong> Pengantar Teknologi Informasi</p>
+            <p><strong>Jenis Tugas:</strong> E-Portfolio</p>
+        </section>
+
+
+        <!-- TUGAS 1 -->
+        <section id="tugas1" class="card">
+
+            <h2>Tugas 1 — Fetch-Decode-Execute Cycle</h2>
+
+            <h3>Analisis Siklus Fetch-Decode-Execute</h3>
+
+            <p>
+                Fetch-Decode-Execute merupakan siklus kerja dasar CPU dalam
+                menjalankan sebuah instruksi. CPU akan mengambil instruksi dari
+                memori, menerjemahkan instruksi tersebut, kemudian menjalankannya.
+            </p>
+
+            <div class="cycle">
+
+                <div class="step">
+                    <strong>1. FETCH</strong>
+                    CPU mengambil instruksi dari memori.
+                </div>
+
+                <div class="step">
+                    <strong>2. DECODE</strong>
+                    CPU menerjemahkan instruksi yang diperoleh.
+                </div>
+
+                <div class="step">
+                    <strong>3. EXECUTE</strong>
+                    CPU menjalankan instruksi tersebut.
+                </div>
+
+            </div>
+
+            <h3>Contoh: Penjumlahan Dua Bilangan</h3>
+
+            <p>
+                Misalnya terdapat instruksi untuk menjumlahkan angka 5 dan 3.
+                CPU akan melakukan proses sebagai berikut:
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Fetch:</strong> CPU mengambil instruksi penjumlahan
+                    dari memori.
+                </li>
+
+                <li>
+                    <strong>Decode:</strong> CPU menerjemahkan instruksi bahwa
+                    operasi yang harus dilakukan adalah penjumlahan.
+                </li>
+
+                <li>
+                    <strong>Execute:</strong> ALU melakukan operasi 5 + 3.
+                </li>
+
+                <li>
+                    <strong>Hasil:</strong> CPU memperoleh hasil 8 dan
+                    menyimpannya pada register atau memori sesuai instruksi.
+                </li>
+            </ol>
+
+            <div class="conclusion">
+                <strong>Kesimpulan:</strong>
+                Siklus Fetch-Decode-Execute memungkinkan CPU menjalankan
+                instruksi secara berurutan sehingga program dapat bekerja
+                sesuai perintah yang diberikan.
+            </div>
+
+        </section>
+
+
+        <!-- TUGAS 2 -->
+        <section id="tugas2" class="card">
+
+            <h2>Tugas 2 — Perbandingan SSD dan HDD</h2>
+
+            <h3>Perbandingan Karakteristik</h3>
+
+            <table>
+
+                <tr>
+                    <th>Karakteristik</th>
+                    <th>SSD</th>
+                    <th>HDD</th>
+                </tr>
+
+                <tr>
+                    <td>Teknologi</td>
+                    <td>Flash memory</td>
+                    <td>Piringan magnetik</td>
+                </tr>
+
+                <tr>
+                    <td>Kecepatan</td>
+                    <td>Lebih cepat</td>
+                    <td>Lebih lambat</td>
+                </tr>
+
+                <tr>
+                    <td>Ketahanan terhadap guncangan</td>
+                    <td>Lebih tahan</td>
+                    <td>Lebih rentan</td>
+                </tr>
+
+                <tr>
+                    <td>Suara</td>
+                    <td>Hampir tidak bersuara</td>
+                    <td>Dapat menghasilkan suara</td>
+                </tr>
+<tr>
+                    <td>Konsumsi daya</td>
+                    <td>Relatif lebih rendah</td>
+                    <td>Relatif lebih tinggi</td>
+                </tr>
+
+                <tr>
+                    <td>Harga per kapasitas</td>
+                    <td>Lebih mahal</td>
+                    <td>Lebih murah</td>
+                </tr>
+
+            </table>
+
+            <h3>Evaluasi untuk Laptop Mahasiswa yang Sering Dibawa</h3>
+
+            <p>
+                Untuk laptop mahasiswa yang memiliki mobilitas tinggi, SSD
+                lebih sesuai digunakan dibandingkan HDD. SSD tidak menggunakan
+                komponen mekanis yang bergerak sehingga lebih tahan terhadap
+                guncangan ketika laptop dibawa berpindah tempat.
+            </p>
+
+            <p>
+                Selain itu, SSD memiliki kecepatan baca dan tulis yang lebih
+                tinggi sehingga proses booting sistem operasi, membuka aplikasi,
+                menjalankan program, dan mengakses file dapat dilakukan dengan
+                lebih cepat.
+            </p>
+
+            <div class="conclusion">
+                <strong>Kesimpulan:</strong>
+                SSD lebih sesuai untuk laptop mahasiswa dengan mobilitas tinggi
+                karena memiliki kecepatan yang tinggi, lebih tahan terhadap
+                guncangan, dan mendukung penggunaan laptop yang lebih praktis.
+            </div>
+
+        </section>
+
+
+        <!-- TUGAS 3 -->
+        <section id="tugas3" class="card">
+
+            <h2>Tugas 3 — Sistem Rekam Medis Elektronik Rumah Sakit</h2>
+
+            <h3>Studi Kasus</h3>
+
+            <p>
+                Sebuah rumah sakit membutuhkan sistem rekam medis elektronik
+                yang dapat diakses dengan cepat oleh puluhan tenaga medis secara
+                bersamaan. Sistem juga harus mampu menjaga data agar tidak hilang.
+            </p>
+
+            <h3>Spesifikasi CPU yang Sesuai</h3>
+
+            <p>
+                CPU dengan beberapa core dan thread diperlukan agar server dapat
+                menangani banyak proses secara bersamaan. CPU multi-core dapat
+                membantu menjalankan permintaan dari banyak pengguna tanpa
+                bergantung pada satu proses saja.
+            </p>
+
+            <p>
+                Untuk sistem rumah sakit, CPU kelas server dengan jumlah core
+                yang memadai dapat digunakan agar sistem mampu menangani
+                database, aplikasi rekam medis, autentikasi pengguna, dan
+                proses lainnya secara bersamaan.
+            </p>
+
+            <h3>Spesifikasi Storage yang Sesuai</h3>
+
+            <ul>
+                <li>Menggunakan SSD untuk mempercepat akses database.</li>
+                <li>Menggunakan kapasitas yang disesuaikan dengan jumlah data.</li>
+                <li>Menggunakan RAID untuk meningkatkan ketersediaan data.</li>
+                <li>Melakukan backup data secara rutin.</li>
+                <li>Menggunakan media penyimpanan tambahan untuk cadangan.</li>
+            </ul>
+
+            <h3>Alasan Pemilihan</h3>
+
+            <p>
+                SSD cocok digunakan karena sistem rekam medis membutuhkan akses
+                data yang cepat. Database rumah sakit dapat berisi banyak data
+                pasien sehingga kecepatan penyimpanan akan berpengaruh terhadap
+                respons sistem.
+            </p>
+
+            <p>
+                Selain performa, keamanan data juga sangat penting. Penggunaan
+                RAID dan sistem backup dapat membantu mengurangi risiko kehilangan
+                data apabila terjadi kerusakan pada salah satu perangkat
+                penyimpanan.
+            </p>
+
+            <div class="conclusion">
+                <strong>Kesimpulan:</strong>
+                Sistem rekam medis elektronik sebaiknya menggunakan CPU multi-core
+kelas server dan penyimpanan SSD yang didukung RAID serta backup
+                berkala. Kombinasi tersebut dapat mendukung akses banyak pengguna
+                sekaligus dan meningkatkan perlindungan terhadap data.
+            </div>
+
+        </section>
+
+
+        <!-- TUGAS 4 -->
+        <section id="tugas4" class="card">
+
+            <h2>Tugas 4 — Analisis Spesifikasi Laptop</h2>
+
+            <h3>Perangkat yang Dipilih</h3>
+
+            <p>
+                <strong>Nama Laptop:</strong> Advan WorkPlus Ryzen 5
+            </p>
+
+            <h3>Spesifikasi Teknis</h3>
+
+            <table>
+
+                <tr>
+                    <th>Komponen</th>
+                    <th>Spesifikasi</th>
+                </tr>
+
+                <tr>
+                    <td>CPU</td>
+                    <td>AMD Ryzen 5 6600H, 6 Core / 12 Thread</td>
+                </tr>
+
+                <tr>
+                    <td>RAM</td>
+                    <td>16 GB LPDDR5</td>
+                </tr>
+
+                <tr>
+                    <td>Storage</td>
+                    <td>512 GB SSD NVMe PCIe 3.0</td>
+                </tr>
+
+                <tr>
+                    <td>GPU</td>
+                    <td>AMD Radeon 660M Integrated Graphics</td>
+                </tr>
+
+                <tr>
+                    <td>Layar</td>
+                    <td>14 inci IPS, 1920 × 1200</td>
+                </tr>
+
+            </table>
+
+            <h3>Analisis Kesesuaian untuk Mahasiswa Sistem Informasi</h3>
+
+            <p>
+                Advan WorkPlus Ryzen 5 memiliki spesifikasi yang sesuai untuk
+                menunjang aktivitas perkuliahan mahasiswa Sistem Informasi.
+                Prosesor AMD Ryzen 5 6600H memiliki 6 core dan 12 thread sehingga
+                dapat mendukung aktivitas multitasking seperti menjalankan browser,
+                aplikasi perkantoran, dan aplikasi pemrograman secara bersamaan.
+            </p>
+
+            <p>
+                RAM 16 GB memberikan kapasitas yang cukup untuk menjalankan
+                berbagai aplikasi perkuliahan, pemrograman, database, dan
+                pengolahan data. Kapasitas RAM tersebut juga mendukung aktivitas
+                multitasking.
+            </p>
+
+            <p>
+                Penyimpanan SSD NVMe 512 GB memiliki kecepatan akses data yang
+                tinggi sehingga dapat membantu mempercepat proses booting,
+                membuka aplikasi, menjalankan program, dan mengakses file.
+            </p>
+
+            <p>
+                Laptop ini dapat digunakan untuk berbagai kegiatan mahasiswa
+                Sistem Informasi seperti pemrograman, pengolahan data,
+                penggunaan database, pembuatan dokumen, browsing, dan kegiatan
+                perkuliahan lainnya.
+            </p>
+
+            <p>
+                GPU AMD Radeon 660M terintegrasi juga dapat digunakan untuk
+                kebutuhan desain ringan. Namun, untuk pekerjaan grafis atau
+                rendering yang sangat berat, GPU terintegrasi memiliki
+                keterbatasan dibandingkan laptop dengan GPU dedicated.
+            </p>
+
+            <div class="conclusion">
+                <strong>Kesimpulan:</strong>
+                Advan WorkPlus Ryzen 5 dengan Ryzen 5 6600H, RAM 16 GB, dan
+                SSD NVMe 512 GB memiliki spesifikasi yang sesuai untuk menunjang
+                aktivitas mahasiswa Sistem Informasi, terutama pemrograman,
+                pengolahan data, database, multitasking, dan kebutuhan
+                perkuliahan sehari-hari.
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>E-Portfolio Pengantar Teknologi Informasi</p>
+        <p>Mahasiswa Sistem Informasi</p>
+    </footer>
+
+</body>
+</html>
